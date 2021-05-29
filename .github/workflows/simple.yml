@@ -5,8 +5,6 @@ on: [push]
 jobs:
   one:
     runs-on: ubuntu-latest
-  run-shell-command:
-    runs-on: ubuntu-latest
     steps: 
       - name: Dumb Github context
         env:
