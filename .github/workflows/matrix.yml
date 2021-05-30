@@ -8,6 +8,7 @@ jobs:
       matrix:
         os: [macos-latest, ubuntu-latest, windows-latest]
         node_version: [6, 8, 10]
+        # includes extra things inside the specified context
         include:
           - os: ubuntu-latest
             node_version: 8
@@ -29,5 +30,4 @@ jobs:
       - name: Log node version
         run: |
           node -v
-          echo $IS_UBUNTU_8
-        
+          echo $IS_UBUNTU_8  
